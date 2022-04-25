@@ -36,3 +36,8 @@ filebeat_elastic_cloud_password: ""
 
 filebeat_windows_version: "7.10.2"
 filebeat_windows_configdir: 'C:\ProgramData\chocolatey\lib\filebeat\tools\'
+
+filebeat_nupkg_hash: 88EFF6F9C32E6484AD27BB1C22F377A3C10E315F
+filebeat_nupkg_url: https://prod-sf-distribution.hb.bizmrg.com/filebeat/filebeat.7.10.2.nupkg
+filebeat_nupkg_path: c:\programdata\filebeat.7.10.2.nupkg
+
