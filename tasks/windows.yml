@@ -1,5 +1,11 @@
 ---
 - block:
+    - name: Download offline nupkg installer package
+      ansible.windows.win_get_url:
+        checksum: "{{ filebeat_nupkg_hash }}"
+        url: "{{ filebeat_nupkg_url }}"
+        dest: "{{ filebeat_nupkg_path }}"
+
     - name: Install Filebeat specific verion in Windows
       chocolatey.chocolatey.win_chocolatey:
         name: "{{ filebeat_package }}"
