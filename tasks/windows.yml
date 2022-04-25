@@ -11,7 +11,7 @@
         name: "{{ filebeat_package }}"
         state: "{{ filebeat_package_state if (filebeat_windows_version != 'latest') else 'latest' }}"
         version: "{{ filebeat_windows_version }}"
-        source: "{{ filebeat_nupkg_path }}"
+        source: "c:\\programdata"
 
     - name: Copy Filebeat configuration.
       ansible.windows.win_template:
