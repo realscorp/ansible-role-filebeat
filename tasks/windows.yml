@@ -10,7 +10,7 @@
       chocolatey.chocolatey.win_chocolatey:
         name: "{{ filebeat_package }}"
         state: "{{ filebeat_package_state if (filebeat_windows_version != 'latest') else 'latest' }}"
-        version: "{{ filebeat_windows_version }}"
+        # version: "{{ filebeat_windows_version }}"
         source: "c:\\programdata"
 
     - name: Copy Filebeat configuration.
